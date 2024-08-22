@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Listagem de Animais</title>
+  <link rel="stylesheet" href="/animals/public/styles/style.scss">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+  <center>
+  <h1>Cadastro de Animais</h1>
+  <form id="petForm" action="/cadastrar-animal" method="POST">
+    <input type="text" name="nome" placeholder="Nome">
+    <input type="text" name="raca" placeholder="Raça">
+    <input type="text" name="especie" placeholder="Espécie">
+    <input type="number" name="idade" placeholder="Idade">
+    <input type="text" name="peso" placeholder="Peso">
+    <input type="text" name="cor" placeholder="Cor">
+    <input type="text" name="dono" placeholder="Dono">
+    <button type="submit">Cadastrar</button>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="module" src="../scripts/form.js"></script>
+  </form>
+  </center>
+  <h1>Listagem de Animais</h1>
+  <ul>
+    <% animais.forEach(animal=> { %>
+      <li>
+        <%= animal.nome %> - <%= animal.raca %> - <%= animal.especie %>
+        <button class="delete-btn" data-id="<%= animal.id %>">Deletar</button>
+      </li>
+      <% }) %>
+  </ul>
+  
+</body>
+
+</html>

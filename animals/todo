@@ -1,0 +1,3 @@
+-- Desenvolva uma aplicação que será para cadastro de animais (assim como a que realizada em aula), onde os dados vem de um formulário (nome, especie, raça, idade), ao inserir esses dados, passe cada um deles por uma validação (utilize classe), e acaso estiver tudo certo com os dados do animal, inserir esse animal na lista de animais cadastrados exibidos na tela.
+A ideia é que vocês criem uma aplicação com HTML + CSS + JS, onde vocês preenchem um formulário e mostrem em tela aquilo que vocês cadastraram. Se for pra ser espertinhos, façam requisições com AJAX e utilizem o JQuery. @done @done @done @done
+Se quiserem ir além, utilizem a API que vocês construiram no projeto final
